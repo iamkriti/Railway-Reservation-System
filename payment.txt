@@ -1,0 +1,2 @@
+db.phones.insert({phone:"0777296705", pin:"1234"});
+db.cards.insert({card:"1111111111111111", cvc:"111" ,exp:"11/11"});

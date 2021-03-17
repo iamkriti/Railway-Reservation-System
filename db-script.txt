@@ -1,0 +1,131 @@
+use railway;
+
+db.routes.insert({name:"main-line",route:[{name:"Noida City Center", fair:0},
+{name:"Golf Course", fair:20},
+{name:"Botanical Garden", fair:40},
+{name:"Noida sector 18", fair:60},
+{name:"Noida sector 16", fair:80},
+{name:"Noida sector 15", fair:100},
+{name:"New Ashok Nagar", fair:120},
+{name:"Mayur Vihar Extension", fair:140},
+{name:"Mayur Vihar Phase -1 ", fair:160},
+{name:"Akshardham", fair:180},
+{name:"Yamuna Bank", fair:200},
+{name:"Indraprastha", fair:220},
+{name:"Pragari Maidain", fair:240},
+{name:"Barakhamba", fair:260},
+{name:"Rajiv Chowk", fair:280},
+{name:"Patel Chowk", fair:300},
+{name:"Central Secratriat", fair:320},
+{name:"Udyog bhavan", fair:340},
+{name:"Lok Kalyan Marg", fair:360},
+{name:"Jor Bagh", fair:380},
+{name:"AIIMS", fair:400} ,
+{name:"Green Park", fair:420},
+{name:"Haus Khas", fair:440},
+{name:"Malviya Nagar", fair:460},
+{name:"Saket", fair:480},		 
+{name:"Qutumb Minar", fair:490},
+{name:"Chattarpur", fair:500}]});
+
+db.routes.insert({name:"matale-line",route:[{name:"Matale", fair:0},
+{name:"Karol Bagh", fair:20},
+{name:"	Rajendra Place", fair:40},
+{name:"Shadipur", fair:80},
+{name:"	Kirti Nagar", fair:100},
+{name:"Moti Nagar", fair:120},
+{name:"Ramesh Nagar", fair:140},
+{name:"RingRoad", fair:160},
+{name:"Rajouri Garden", fair:180},
+{name:"Tagore Garden", fair:200},
+{name:"Subhash Nagar", fair:220},
+{name:"Tilak Nagar", fair:240}]});
+
+db.routes.insert({name:"red-line",route:[{name:"Janakpuri West", fair:0},
+{name:"Uttam Nagar East", fair:20},
+{name:"Uttam Nagar West", fair:60},
+{name:"Nawada", fair:80},
+{name:"Dwarka Mor", fair:100},
+{name:"Dwarka", fair:120},
+{name:"Dwarka Sector 14", fair:140},
+{name:"Dwarka Sector 12", fair:160},
+{name:"Dwarka Sector 21", fair:180},
+{name:"Inderlok", fair:200},	 
+{name:"Ashok Park Main", fair:220},
+{name:"Punjabi Bagh West", fair:240},
+{name:"Punjabi Bagh", fair:260},
+{name:"Shivaji Park", fair:280},
+{name:"Madipur", fair:300},
+{name:"Peera Garhi", fair:320}]});
+
+
+
+
+db.trains.insert({name:"train 1", route:"main-line"});
+db.trains.insert({name:"train 2", route:"main-line"});
+db.trains.insert({name:"train 3", route:"main-line"});
+db.trains.insert({name:"train 4", route:"main-line"});
+db.trains.insert({name:"train 5", route:"main-line"});
+db.trains.insert({name:"train 6", route:"red-line"});
+db.trains.insert({name:"traon 7", route:"red-line"});
+db.trains.insert({name:"Express (A)", route:"matale-line"});
+db.trains.insert({name:"Express (B)", route:"matale-line"});
+
+
+
+
+db.classes.insert({name:"1st class", fairRatio:1.05})
+db.classes.insert({name:"2nd class", fairRatio:1.02})
+db.classes.insert({name:"3rd class", fairRatio:1})
+
+
+
+
+db.schedules.insert({time:"05.00 am"});
+db.schedules.insert({time:"06.00 am"});
+db.schedules.insert({time:"09.30 am"});
+db.schedules.insert({time:"10.00 am"});
+db.schedules.insert({time:"10.30 am"});
+db.schedules.insert({time:"11.00 am"});
+db.schedules.insert({time:"12.00 pm"});
+db.schedules.insert({time:"1.30 pm"});
+db.schedules.insert({time:"02.00 pm"});
+db.schedules.insert({time:"03.30 pm"});
+db.schedules.insert({time:"04.00 pm"});
+db.schedules.insert({time:"05.30 pm"});
+db.schedules.insert({time:"07.00 pm"});
+db.schedules.insert({time:"11.00 pm"});
+
+
+
+
+db.cards.insert({card:"1234123412341234", cvc:"123" ,exp:"12/12"});
+db.cards.insert({card:"1111111111111111", cvc:"111" ,exp:"11/11"});
+
+
+
+
+db.phones.insert({phone:"0777296705", pin:"1234"});
+db.phones.insert({phone:"0776655707", pin:"1234"});
+
+
+
+
+db.employees.insert({"firstName":"Tenusha","lastName":"Guruge","nic":"123456789V","address":[{"street":"a","city":"b","state":"c"},{"street":"a1","city":"b1","state":"c1"}]});
+db.employees.insert({"firstName":"Ranmal","lastName":"Dewage","nic":"111111111V","address":[{"street":"a","city":"b","state":"c"},{"street":"a1","city":"b1","state":"c1"}]});
+db.employees.insert({"firstName":"Vimukthi","lastName":"Rajapaksha","nic":"222222222V","address":[{"street":"a","city":"b","state":"c"},{"street":"a1","city":"b1","state":"c1"}]});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
